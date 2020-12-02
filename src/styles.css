@@ -1,0 +1,466 @@
+body {
+  font-family: sans-serif;
+}
+@font-face {
+  font-family: "zrnicrg";
+  src: url("https://uploads.codesandbox.io/uploads/user/deaf60a6-aa66-4ffa-a78e-dfc4fa934d49/oPxk-zrnicrg.woff2");
+}
+.car {
+  width: 100%;
+  height: 400px;
+}
+
+.bb {
+  width: 100%;
+  height: 35px;
+}
+
+.bluebar {
+  width: 100%;
+  height: 5px;
+}
+
+:root {
+  --uno: #4169e1;
+  --dos: #000000;
+  --tres: #000000;
+  --cuatro: #424242;
+  --cinco: #000000;
+}
+
+body {
+  background: var(--uno);
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 100%;
+  color: white;
+  overflow-x: hidden;
+}
+
+#section1 {
+  padding: 100px 0;
+  text-align: center;
+  color: rgb(253, 250, 250);
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+}
+
+#section1 iframe {
+  width: 560px;
+  height: 315px;
+  position: relative;
+  left: 36%;
+  margin: 2px 0 2px;
+}
+
+#section3 {
+  padding: 100px 0;
+  text-align: center;
+  color: black;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+}
+
+#img7 {
+  margin: 0 0 20px 0;
+  position: relative;
+  left: 8%;
+  margin: 0 0 20px 0;
+}
+
+#img8 {
+  margin: 0 0 20px 0;
+  position: relative;
+  left: 15%;
+  margin: 0 0 20px 0;
+}
+
+#img9 {
+  padding: 50px;
+  width: 600px;
+  margin: 4px 0 20px;
+  position: relative;
+  left: 8%;
+}
+
+#img10 {
+  width: 600px;
+  margin: 4px 0 20px;
+  position: relative;
+  left: 20%;
+}
+
+#img11 {
+  padding: 50px;
+  width: 600px;
+  margin: 4px 0 20px;
+  position: relative;
+  left: 60%;
+}
+
+#img12 {
+  width: 600px;
+  margin: 4px 0 20px;
+  position: relative;
+  right: 18%;
+}
+/* 4- ENTRADAS INDEX */
+#entradas-index {
+  width: 100vw;
+  background: var(--tres);
+  /* https://bennettfeely.com/clippy/ */
+  clip-path: polygon(50% 0%, 100% 10%, 100% 90%, 50% 100%, 0 90%, 0 10%);
+  padding: 100px 0;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+}
+
+.entrada {
+  display: flex;
+  flex-flow: column;
+  margin: 0 30px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.entrada figure {
+  width: 270px;
+  height: 270px;
+  border-radius: 50%;
+  background: var(--uno);
+  margin: 0 0 20px 0;
+  position: relative;
+}
+
+.entrada figure img {
+  width: 270px;
+  height: 270px;
+  border-radius: 50%;
+  background: var(--uno);
+  margin: 0 0 20px 0;
+  position: relative;
+}
+
+.plus-entrada {
+  position: absolute;
+  z-index: 1;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: all linear 0.3s;
+}
+
+.entrada figure:hover .plus-entrada {
+  top: 50%;
+  left: 50%;
+  opacity: 1;
+}
+
+.entrada h5 {
+  text-decoration: none;
+  color: white;
+}
+
+/*Toggles*/
+
+#toggle {
+  display: none;
+}
+
+#toggle2 {
+  display: none;
+}
+
+#toggle3 {
+  display: none;
+}
+
+#toggle4 {
+  display: none;
+}
+
+#toggle5 {
+  display: none;
+}
+
+#toggle6 {
+  display: none;
+}
+
+#compost {
+  position: relative;
+  background-color: #fffdf7;
+  width: 100vw;
+  height: 1200px;
+  color: #000000;
+  clip-path: polygon(0 0, 0 80%, 50% 90%, 100% 80%, 100% 0, 50% 7%);
+  text-align: center;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  margin-top: 0;
+}
+
+#compost video {
+  width: 720px;
+  height: auto;
+  position: relative;
+  left: 22.5%;
+  margin: 2px 0 20px;
+}
+
+#compost p {
+  width: 900px;
+  font-size: 17px;
+  margin: 30px auto;
+  text-align: center;
+}
+
+#img1 {
+  width: 200px;
+  margin: 0 0 20px 0;
+  position: relative;
+  left: 42.5%;
+  margin: 0 0 20px 0;
+}
+
+#vermi {
+  position: relative;
+  background-color: #fffdf7;
+  width: 100vw;
+  height: 1200px;
+  color: #000000;
+  clip-path: polygon(0 0, 0 80%, 50% 90%, 100% 80%, 100% 0, 50% 7%);
+  text-align: center;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  margin-top: 0;
+}
+
+#vermi video {
+  width: 720px;
+  height: auto;
+  position: relative;
+  left: 22.5%;
+  margin: 2px 0 20px;
+}
+
+#vermi p {
+  width: 900px;
+  font-size: 17px;
+  margin: 30px auto;
+  text-align: center;
+}
+
+#img2 {
+  width: 200px;
+  margin: 0 0 20px 0;
+  position: relative;
+  left: 42.5%;
+  margin: 0 0 20px 0;
+}
+
+#bokashi {
+  position: relative;
+  background-color: #fffdf7;
+  width: 100vw;
+  height: 1200px;
+  color: #000000;
+  clip-path: polygon(0 0, 0 80%, 50% 90%, 100% 80%, 100% 0, 50% 7%);
+  text-align: center;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  margin-top: 0;
+}
+
+#bokashi video {
+  width: 720px;
+  height: auto;
+  position: relative;
+  left: 22.5%;
+  margin: 2px 0 20px;
+}
+
+#bokashi p {
+  width: 900px;
+  font-size: 17px;
+  margin: 30px auto;
+  text-align: center;
+}
+
+#img3 {
+  width: 200px;
+  margin: 0 0 20px 0;
+  position: relative;
+  left: 42.5%;
+  margin: 0 0 20px 0;
+}
+
+#SSD {
+  position: relative;
+  background-color: #fffdf7;
+  width: 100vw;
+  height: 1200px;
+  color: #000000;
+  clip-path: polygon(0 0, 0 80%, 50% 90%, 100% 80%, 100% 0, 50% 7%);
+  text-align: center;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  margin-top: 0;
+}
+
+#SSD video {
+  width: 720px;
+  height: auto;
+  position: relative;
+  left: 22.5%;
+  margin: 2px 0 20px;
+}
+
+#SSD p {
+  width: 900px;
+  font-size: 17px;
+  margin: 30px auto;
+  text-align: center;
+}
+
+#img4 {
+  width: 200px;
+  margin: 0 0 20px 0;
+  position: relative;
+  left: 42.5%;
+  margin: 0 0 20px 0;
+}
+
+#radiador {
+  position: relative;
+  background-color: #fffdf7;
+  width: 100vw;
+  height: 1200px;
+  color: #000000;
+  clip-path: polygon(0 0, 0 80%, 50% 90%, 100% 80%, 100% 0, 50% 7%);
+  text-align: center;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  margin-top: 0;
+}
+
+#radiador video {
+  width: 720px;
+  height: auto;
+  position: relative;
+  left: 22.5%;
+  margin: 2px 0 20px;
+}
+
+#radiador p {
+  width: 900px;
+  font-size: 17px;
+  margin: 30px auto;
+  text-align: center;
+}
+
+#img5 {
+  width: 200px;
+  margin: 0 0 20px 0;
+  position: relative;
+  left: 42.5%;
+  margin: 0 0 20px 0;
+}
+
+#bluray {
+  position: relative;
+  background-color: #fffdf7;
+  width: 100vw;
+  height: 1200px;
+  color: #000000;
+  clip-path: polygon(0 0, 0 80%, 50% 90%, 100% 80%, 100% 0, 50% 7%);
+  text-align: center;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  margin-top: 0;
+}
+
+#bluray video {
+  width: 720px;
+  height: auto;
+  position: relative;
+  left: 22.5%;
+  margin: 2px 0 20px;
+}
+
+#bluray p {
+  width: 900px;
+  font-size: 17px;
+  margin: 30px auto;
+  text-align: center;
+}
+
+#img6 {
+  width: 200px;
+  margin: 0 0 20px 0;
+  position: relative;
+  left: 42.5%;
+  margin: 0 0 20px 0;
+}
+
+/* 1 - TEXTOS */
+p {
+  font-weight: 400;
+  font-size: 2em;
+}
+
+h1 {
+  font-weight: 400;
+  font-size: 3.4em;
+}
+
+h2 {
+  font-weight: 500;
+  font-size: 3em;
+}
+
+h3 {
+  font-weight: 500;
+  font-size: 2.6em;
+}
+
+h4 {
+  font-weight: 500;
+  font-size: 2.2em;
+}
+
+h5 {
+  font-weight: 500;
+  font-size: 1.8em;
+}
+
+h6 {
+  font-weight: 500;
+  font-size: 1.4em;
+}
+
+.boton {
+  display: inline-block;
+  padding: 8px 14px;
+  text-decoration: none;
+  border: 1px solid white;
+  border-radius: 2px;
+  margin: 10px auto;
+  color: white;
+}
+
+.boton:hover {
+  background: #0000cd;
+  border: 1px solid #0000cd;
+  transition: all linear 0.2s;
+}
